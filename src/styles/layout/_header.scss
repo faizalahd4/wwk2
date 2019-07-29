@@ -1,0 +1,30 @@
+/**
+ * Copyright (c) 2019
+ * Header styling
+ * 
+ * @summary Header
+ * @author  Faizal
+ * 
+ * Created at: 2019 July 26
+ */
+ header {
+    background:#2c3e50;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 2px #ccc;
+   .logo {
+      font-family: 'Starwars', sans-serif;
+      font-size: $font-size-h4;
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+   }
+ }
+ .sub-header {
+    font-family: 'Starwars', sans-serif;
+    font-size: $font-size-h1;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+ }
+ 

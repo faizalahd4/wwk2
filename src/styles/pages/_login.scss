@@ -1,0 +1,15 @@
+.wr-login {
+    text-align: center;
+    margin: 10% auto 20% auto;
+    a {
+        padding: 5px 15px;
+        background: #2c3e50;
+        color: #ecf0f1;
+        border:1px solid #34495e;
+        &:hover {
+            color: #ecf0f1;
+            text-decoration: none;
+            cursor: pointer;
+        }
+      }
+}

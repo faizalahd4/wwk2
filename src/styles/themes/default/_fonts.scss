@@ -1,0 +1,36 @@
+/**
+ * Copyright (c) 2019
+ * Font declaration
+ * 
+ * @summary Font declaration
+ * @author  Faizal
+ * 
+ * Created at: 2019 July 26
+ */
+
+@font-face {
+    font-family: Starwars;
+    src: url(../fonts/starwars/starwars.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Starjedi;
+    src: url(../fonts/starwars/starjedi.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: RobotoCondensed-Bold;
+    src: url(../fonts/roboto-condensed/RobotoCondensed-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: RobotoCondensed-Light;
+    src: url(../fonts/roboto-condensed/RobotoCondensed-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(../fonts/roboto-condensed/RobotoCondensed-Regular.ttf) format('truetype');
+}
+
+

@@ -1,0 +1,22 @@
+/**
+ * Copyright (c) 2019
+ * Mixin for font face
+ * 
+ * @summary Mixin for font face
+ * @author  Faizal
+ * 
+ * Created at: 2019 July 26
+ */
+ 
+ @mixin font-face ( $font-family, $file-path, $weight: normal, $style: noral ) {
+    @font-face {
+        font-family: $font-family;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+        url('#{$file-path}.woff') format('woff'),
+        url('#{$file-path}.tff') format('truetype'),
+        url('#{$file-path}.svg##{$file-path}') format('svg');
+        font-weight: $weight;
+        font-style: $style;
+    }
+}

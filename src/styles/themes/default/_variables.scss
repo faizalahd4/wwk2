@@ -1,0 +1,204 @@
+/**
+ * Copyright (c) 2019
+ * Default scss variable setting 
+ * 
+ * @summary Default scss variable setting
+ * @author  Faizal
+ * 
+ * Created at: 2019 July 26
+ */
+
+$cherry-red:             #d01d22;
+$maroon:                 #800000;
+$green:                  #7db680;
+$green-darker:			 #22ac66;
+$brown:                  #ad9580;
+$brown-light:            #c9bbab;
+$creme:                  #f7f5df;
+$creme-light:            #fcfae5;
+$blue:                   #3b79c7;
+$purple:                 #774db2;
+$turquoise:              #49ccb5;
+$yellow:                 #fbc90b;
+$disable:				 #cdcdcd;
+
+
+
+$black:                  #000;
+$gray-darker:            #333;
+$gray-dark:              #555;
+$gray-darklight:         #666;
+$gray-medium:            #586069;
+$gray:                   #777;
+$gray-light:             #bbb;
+$gray-lighter:           #d6d6d6;
+$white:                  #f3f3f3;
+$pure-white:             #fff;
+$table-boder:			 #b8b8b8;
+$paybills-border-bt:	 #d9d9d9;
+$right-btn-bgd:			 #eee;
+$paybill-reminder:		 #e5e5e5;
+$border-header:			 #700000;
+$bgd-expended:			 #2f2f2f;
+$bgd-modal: 			 #f2f2f2;
+
+
+$brand-primary:         $cherry-red;
+$brand-success:         $green;
+$brand-info:            $blue;
+$brand-warning:         $yellow;
+$brand-danger:          $cherry-red;
+$border-panel:			#d6d6d6;
+$bgd-panel:				#f9f9f9;
+$color-tab:				#919191;
+$border-sidebar-footer: #4c4c4c;
+
+
+//## Settings for some of the most global styles.
+//Background color for `<body>`.
+$body-bg:               #fff;
+//Global error text color on `<body>`.
+$error-text-color:      #700000;
+//Global text color on `<body>`.
+$text-color:            $gray-dark !default;
+//Global textual link color.
+$link-color:            $black;
+//Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//Link hover decoration.
+$link-hover-decoration: underline;
+
+
+//Typography
+//Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:  Open Sans, Verdana, Helvetica, sans-serif;
+$font-family-serif:       'RobotoCondensed', sans-serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-serif;
+$font-size-base:          16px;
+$font-size-large:         18px;
+$font-size-small:         14px;
+$font-size-h1:            26px;
+$font-size-h2:            24px;
+$font-size-h3:            22px;
+$font-size-h4:            20px; // the size from this and below are not defined, they are deduced
+$font-size-h5:            18px; // eww, so small, hopefully we'll never use
+$font-size-h6:            16px; // eww, so small, hopefully we'll never use
+//Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.5;
+//Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
+//By default, this inherits from the `<body>`.
+$headings-font-family:    inherit;
+$headings-font-weight:    700;
+$headings-line-height:    normal;
+$headings-color:          $black;
+
+//Components
+//Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+$padding-base-vertical:     8px !default;
+$padding-base-horizontal:   12px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        3px;
+$border-radius-large:       5px;
+$border-radius-small:       2px;
+
+//Media queries breakpoints
+//Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+//Grid system
+//Define your custom responsive grid.
+
+//Number of columns in the grid.
+$grid-columns:              12;
+//Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px;
+// Navbar collapse
+//Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//Buttons
+//For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight:                bold;
+
+$btn-default-color:              $pure-white;
+$btn-default-bg:                 $gray-darker;
+$btn-default-bg-hover:           $gray-dark;
+$btn-default-bg-active:          $black;
+$btn-default-border:             0;
+
+$btn-primary-color:              $pure-white;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-bg-hover:           $maroon;
+$btn-primary-bg-active:          $cherry-red;
+$btn-primary-border:             0;
+
+$btn-success-color:              #fff !default;
+$btn-success-bg:                 $brand-success !default;
+$btn-success-border:             darken($btn-success-bg, 5%) !default;
+
+$btn-info-color:                 #fff !default;
+$btn-info-bg:                    $brand-info !default;
+$btn-info-border:                darken($btn-info-bg, 5%) !default;
+
+$btn-warning-color:              #fff !default;
+$btn-warning-bg:                 $brand-warning !default;
+$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               #fff !default;
+$btn-danger-bg:                  $brand-danger !default;
+$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+
+$btn-disable-color:               #fff !default;
+$btn-disable-bg:                  $disable !default;
+$btn-disable-border:              $disable !default;
+
+$btn-link-disabled-color:        $gray-light !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:         $border-radius-base !default;
+$btn-border-radius-large:        $border-radius-large !default;
+$btn-border-radius-small:        $border-radius-small !default;

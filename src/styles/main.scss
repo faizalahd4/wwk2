@@ -1,0 +1,21 @@
+/**
+ * Copyright (c) 2019
+ * Importing all sass files
+ * 
+ * @summary Importing all sass files
+ * @author  Faizal
+ * 
+ * Created at: 2019 July 26
+ */
+
+@import "themes/default/fonts";
+@import "themes/default/variables";
+@import "base/base";
+@import "mixins/all";
+@import "layout/all";
+@import "utilities/all";
+@import "pages/all";
+@import "vendor/boostrap/bootstrap";
+
+/* Components */
+@import 'components/all';

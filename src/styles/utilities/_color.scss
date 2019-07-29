@@ -1,0 +1,35 @@
+/**
+ * Copyright (c) 2019
+ * Color specific setting
+ * 
+ * @summary Color specific setting
+ * @author  Faizal
+ * 
+ * Created at: 2019 July 26
+ */
+
+$palettes: (
+    lightest: (
+        base: #fff
+    ),
+    grey: ( 
+        xx-light: #f4f0ea,
+        x-light: #bfbfbf,
+        min-light: #fcfcfc,
+        light: #DADADA,
+        base: #CCC6C6,
+        dark: #666363,
+        min-dark: #999494,
+        x-dark: #100f0f
+    ),
+    red:(
+        light: #070505,
+        base: #D3090F,
+        dark: #7F0000,
+        min-dark: #cc0000
+    ),
+    black: (
+        base: #000,
+        light: #353333
+    )
+);

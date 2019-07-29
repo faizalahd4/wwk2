@@ -1,0 +1,24 @@
+/**
+ * Copyright (c) 2019
+ * Footer styling
+ * 
+ * @summary Footer
+ * @author  Faizal
+ * 
+ * Created at: 2019 July 26
+ */
+
+
+ footer {
+    font-size: $font-size-small;
+    color: $gray-medium;
+    text-align: center;
+    padding: 10px;
+    a {
+        color: $gray-medium;
+        &:hover {
+            color: $gray-medium;
+            text-decoration: none; 
+        }
+    }
+}
