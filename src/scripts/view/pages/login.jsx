@@ -8,7 +8,7 @@
  * Created at: 2019 July 26
  */
 
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 
 import * as Config from '../../constants/config';
 import * as Auth from '../../helpers/auth';
