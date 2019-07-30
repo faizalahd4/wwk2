@@ -14,7 +14,7 @@
  body {
      background-color: $body-bg;
      color: $text-color;
-     font-family: 'Maven Pro', sans-serif;//$font-family-base;
+     font-family: $font-family-base;
      margin: 0;
      padding: 0;
      font-size: $font-size-base;
