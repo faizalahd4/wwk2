@@ -8,18 +8,24 @@
  * Created at: 2019 July 26
  */
 
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 
 import * as Session from '../../helpers/session';
+import {URL} from '../../constants/url';
 
 export const Header = (props) => {
     
-    const isUserLogged = (!Session.getSessionValue("token")) ? 'dn' :  '';
+    const [isUserLogged, setIsUserLogged] = useState('');
     
+    useEffect(() => {
+        const isUserLogged = (!Session.getSessionValue("token")) ? 'dn' :  '';
+        setIsUserLogged(isUserLogged);
+    }, []);
+
     const logoff = () => {
         Session.clearAllSession();
-        window.location.href = '/';
+        window.location.href = URL.HOME;
     }
     
     return (
@@ -27,8 +33,8 @@ export const Header = (props) => {
                 <table width='100%' cellPadding='0' cellSpacing='0'>
                     <tbody>
                     <tr>
-                        <td className="logo" align="left" valign="middle">React War ROOM</td>
-                        <td align="right" valign="middle" className={isUserLogged}><span onClick={logoff}>Logoff</span></td>
+                        <td className="logo" align="left" valign="middle"><a href="/"><i className="icon-rocket"></i>&nbsp;React War ROOM</a></td>
+                        <td align="right" valign="middle"><span onClick={logoff} className={[isUserLogged, 'logoff'].join(' ').trim()}> <i className="icon-off"></i></span></td>
                     </tr>
                     </tbody>
                 </table>

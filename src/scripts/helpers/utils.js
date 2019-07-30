@@ -17,3 +17,9 @@ export const encrypt = data => {
 export const decrypt = data => {
     return window.atob( data );
 }
+
+export const trunc = ( val, max ) => {
+    if (!max || val.length <= max) { return val; }
+    var subString = val.substr(0, max-1);
+    return subString + "...";
+};

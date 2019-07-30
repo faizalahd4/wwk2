@@ -9,11 +9,15 @@
  */
 import React, {useEffect} from 'react';
 import * as Session from '../helpers/session';
+import {URL} from '../constants/url';
 
-export const Auth = props => {
+export const AuthURL = (props) => {
     let isUserLoggedIn = (Session.getSessionValue("token")) ? true : false;
-    
-    if (!isUserLoggedIn) {
-        window.location.href = '/';
+    let pathname       = window.location.pathname;
+
+    if (!isUserLoggedIn && pathname !== URL.HOME) {
+        window.location.href = URL.HOME;
+    } else if (isUserLoggedIn && pathname === URL.HOME) {
+        window.location.href = URL.WAR_ROOM;
     }
 }

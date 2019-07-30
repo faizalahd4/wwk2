@@ -19,6 +19,7 @@ import {WarRoom} from './scripts/view/pages/warRoom';
 import {WarRoomDetails} from './scripts/view/pages/warRoomDetails';
 import {Login} from './scripts/view/pages/login';
 import {Languages} from './scripts/constants/languages';
+import {URL} from './scripts/constants/url';
 import './styles/main.scss';
 
 function App() {
@@ -27,9 +28,9 @@ function App() {
 	<div className="app-container">
 		<Router>
 			<Header />
-			<Route path="/" exact component={Login} />
-			<Route path="/warRoom" component={WarRoom} />
-			<Route path="/warRoomDetails/:reponame" component={WarRoomDetails} />
+			<Route path={URL.HOME} exact component={Login} />
+			<Route path={URL.WAR_ROOM}  component={WarRoom} />
+			<Route path={[URL.WAR_ROOM_DETAILS, '/:reponame'].join('').trim()} component={WarRoomDetails} />
 			<Footer />
 		</Router>
 	</div>	
@@ -37,5 +38,3 @@ function App() {
 }
 
 export default withTranslation(Languages.DEFAULT_NS)(App);
-
-//export default withTranslation()(App);

@@ -12,15 +12,28 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin: 8px;
+    margin: 0 0 15px 0;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
     width: 100%;
     padding: 5px;
+    background: $body-bg;
+    transition: all 0.5s ease;
+    &hover {
+      cursor: pointer;
+      box-shadow: 0 0 1px 0 rgba(0,0,0,0.1), 0 0 1px 0 rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.1);
+    }
    .title {
       font-size: $font-size-h6;
       letter-spacing: 0.06em;
       padding-left: 10px;
       text-transform: capitalize;
+      a {
+         transition: all 0.5s ease;
+         &:hover {
+            text-decoration: none;
+            color: $gray-darker
+         }
+      }
    }
    .content {
       font-size: $font-size-small;

@@ -1,15 +1,29 @@
 .wr-login {
     text-align: center;
-    margin: 10% auto 20% auto;
+    margin: 10% auto 5% auto;
     a {
-        padding: 5px 15px;
+        padding: 40px 20px;
+        border-radius: 5px;
         background: #2c3e50;
         color: #ecf0f1;
         border:1px solid #34495e;
+        display: inline-block;
+        transition: all 0.5s ease;
+        i {
+            font-size: 180px;
+        }
+        span {
+            font-size: 20px;
+            text-transform: uppercase;
+            display: block;
+            padding-top: 20px;
+        }
         &:hover {
             color: #ecf0f1;
             text-decoration: none;
             cursor: pointer;
+            box-shadow: 0 0 3px #34495e;
+            background: #34495e;
         }
       }
 }
